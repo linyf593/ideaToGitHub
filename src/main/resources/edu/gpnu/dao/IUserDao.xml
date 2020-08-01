@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.gpnu.dao.IUserDao">
+    <!--配置查询所有-->
+    <select id="findAll" resultType="edu.gpnu.domain.User">
+        SELECT  * FROM  USER
+    </select>
+</mapper>
+<!--如果使用注解的方式，那这个xml文件就没什么用了-->
